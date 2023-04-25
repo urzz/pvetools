@@ -3428,7 +3428,7 @@ $(for i in $dname;do echo $i ;done)  \
             a )
                 if(whiptail --title "vbios tools" --yesno "install folder2ram to optimaz USB OS storage?
         安装USB设备做为系统盘的优化？" 10 60 );then
-                    wget https://ghproxy.com/https://raw.githubusercontent.com/urzz/pve-folder2ram/master/install.sh -O -| bash
+                    wget https://raw.githubusercontent.com/urzz/pve-folder2ram/master/install.sh -O -| bash
                     whiptail --title "Success" --msgbox "Done. \
 配置完成" 10 60
                 fi
@@ -3436,7 +3436,7 @@ $(for i in $dname;do echo $i ;done)  \
             b )
                 if(whiptail --title "vbios tools" --yesno "uninstall folder2ram optimaz?
         卸载USB设备做系统盘的优化？" 10 60 );then
-                    wget https://ghproxy.com/https://raw.githubusercontent.com/urzz/pve-folder2ram/master/uninstall.sh -O -| bash
+                    wget https://raw.githubusercontent.com/urzz/pve-folder2ram/master/uninstall.sh -O -| bash
                     whiptail --title "Success" --msgbox "Done. \
 配置完成" 10 60
                 fi
